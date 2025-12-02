@@ -36,16 +36,6 @@ Compact and easy to install, this kit streams:
 * Weather anomalies
 
 The kit turns daily farm activity into structured intelligence.
-
-### Climate Risk Engine
-
-This engine combines satellite data (NDVI, CHIRPS, soil moisture indices) with sensor inputs to generate:
-
-* Early drought and flood alerts
-* Localized planting windows
-* Yield-risk heatmaps
-* Farm-level climate scores
-
 The models learn over time, improving their accuracy as conditions shift.
 
 ### Parametric Insurance Automation
@@ -69,16 +59,6 @@ It predicts:
 
 Insights arrive through SMS, WhatsApp, USSD, or voice for easy access.
 
-### Dynamic Agronomic Advisory
-
-Practical advice generated from weather radar, soil sensors, and satellite data.
-Farmers receive guidance on:
-
-* Ideal planting periods
-* Water management
-* Fertilizer timing
-* Disease and stress indicators
-  Delivered by multilingual voice chatbots so literacy is never a barrier.
 
 ### Dynamic Credit Scoring
 
