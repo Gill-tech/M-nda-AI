@@ -1,54 +1,4 @@
-# Welcome to your Lovable project
 
-## Project info
-
-**URL**: https://lovable.dev/projects/7b17b3ec-1d07-4648-b328-a4680d13bcc4
-
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/7b17b3ec-1d07-4648-b328-a4680d13bcc4) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
 
 ## What technologies are used for this project?
 
@@ -60,17 +10,6 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/7b17b3ec-1d07-4648-b328-a4680d13bcc4) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
 
 ---
 
@@ -388,3 +327,150 @@ Múnda AI is built on strong ethical foundations:
 ## Support
 
 For questions or issues, please visit the [Lovable Discord community](https://discord.com/channels/1119885301872070706/1280461670979993613) or refer to the [Lovable documentation](https://docs.lovable.dev/).
+=======
+Below is a polished, detailed, creative README for **Múnda AI**. Clear, human, and built to stand out.
+
+---
+
+# Múnda AI
+
+Intelligence for Farmers. Clarity for Markets. Confidence for the Future.
+
+Múnda comes from the Akamba word *shamba*, meaning land. The land is the farmer’s foundation, and Múnda AI is built to protect it, understand it, and turn its data into real economic power.
+
+This platform brings climate intelligence, market forecasting, and inclusive finance into one practical tool that any smallholder farmer can use.
+
+---
+
+## What Múnda AI Does
+
+Múnda AI starts on the farm. Each farmer receives a **Climate Smart Agric Kit** that captures real-time soil conditions, weather signals, and environmental stress. The system then builds a complete, verifiable risk profile of the farm.
+
+With that foundation, Múnda AI moves into prediction. The platform analyzes climate patterns, market trends, and yield history to forecast prices and sales paths for specific crops in specific counties. A tomato farmer in Nakuru can predict market behavior before harvest and choose the best buyer.
+
+At the same time, the system builds a **dynamic credit score**. It uses climate resilience, projected yield, and farm efficiency to unlock fair and fast agrifinance from partner institutions.
+
+The entire experience is accessible through local-language chatbots, USSD, and a map-based web interface designed for low bandwidth regions.
+
+---
+
+## Key Features
+
+### Climate Smart Agric Kit
+
+Compact and easy to install, this kit streams:
+
+* Soil moisture and temperature
+* Real-time rainfall trends
+* Drought and flood indicators
+* Weather anomalies
+
+The kit turns daily farm activity into structured intelligence.
+The models learn over time, improving their accuracy as conditions shift.
+
+### Parametric Insurance Automation
+
+Múnda AI supports insurance partners with clean, explainable triggers.
+
+* When rainfall or vegetation indices cross risk thresholds, payouts initiate automatically.
+* No waiting for field inspections.
+* No manual assessments.
+  The system minimizes basis risk and speeds up recovery for farmers.
+
+### Market and Yield Intelligence
+
+Farmers often produce blindly, hoping the market works out. Múnda AI changes that.
+It predicts:
+
+* Future crop prices in specific counties
+* Buyer demand and oversupply pockets
+* Seasonal trends across horticulture and staple crops
+* Expected yields based on acreage, vegetation, and climate conditions
+
+Insights arrive through SMS, WhatsApp, USSD, or voice for easy access.
+
+
+### Dynamic Credit Scoring
+
+As the system learns the farmer’s climate resilience and predicted yield, it builds a live credit score.
+This score:
+
+* Speeds up loan approvals
+* Allows partners to tailor products
+* Reduces paperwork and delays
+* Creates a financial identity for farmers with no prior records
+
+### Access for All
+
+* **Voice bots** in local dialects through Rag models
+* **USSD** for low-network areas
+* **Web UI** with geographic mapping of markets, roads, soil patterns, and finance institutions
+
+---
+
+## Who Múnda AI Serves
+
+### Smallholder Farmers
+
+Rain-fed farmers growing maize, beans, potatoes, vegetables, and horticultural crops in counties such as Nakuru, Nyandarua, Narok, and Kajiado.
+
+### Cooperatives and Producer Groups
+
+They use risk maps and yield forecasts to negotiate better insurance and coordinate collective sales.
+
+### Extension Officers
+
+They combine field insights with satellite overlays to give accurate, location-specific advice.
+
+### Financial and Insurance Partners
+
+They use real-time credit scoring and automated triggers to derisk portfolios.
+
+---
+
+## Why This Matters
+
+Farmers face unpredictable rainfall, extreme droughts, sudden floods, and unstable markets. Most still make decisions without early warnings or price forecasts. As a result, poor timing, low farm-gate prices, and post-harvest losses keep incomes down year after year.
+
+Múnda AI changes this pattern by giving farmers the same level of intelligence used by large agribusinesses.
+The platform transforms risk into clarity, data into planning, and planning into higher income.
+
+---
+
+## Ethical and Fair by Design
+
+Múnda AI follows clear principles:
+
+* **Ethical data sourcing** with open datasets wherever possible
+* **Clear consent** for farmer data
+* **Equity-first design** so no community is excluded
+* **Explainable models** with simple, human-readable insights
+* **Bias checks** to ensure fair outcomes across regions and groups
+
+---
+
+## AI and Geospatial Foundation
+
+The system uses:
+
+* Satellite imagery (NDVI, NDWI, soil moisture)
+* Weather datasets (CHIRPS, ERA5, radar feeds)
+* On-farm sensors
+* Historical market prices
+* LSTM and regression models for prediction
+* Rag-based chatbots for local-language conversation
+
+All outputs are simplified for farmers while remaining detailed enough for cooperatives, insurers, and financial partners.
+
+---
+
+## Vision
+
+A continent where a farmer can predict tomorrow, protect their harvest, negotiate better prices, and access fair finance without leaving their shamba.
+
+Múnda AI turns intelligence into impact and puts that power directly in the farmer’s hands.
+
+---
+
+If you want, I can also create a shorter README, a GitHub-optimized version with badges and sections, or a full documentation structure.
+>>>>>>> 2a59f69663bf8dbf6ed40269d5acf18b3f55b305
