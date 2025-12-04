@@ -1,6 +1,7 @@
 """Model loading and management utilities."""
 import pickle
 import os
+import gzip
 from pathlib import Path
 from typing import Optional, Any
 import logging
@@ -33,15 +34,26 @@ class ModelLoader:
             self._load_all_models()
     
     def _load_pickle_model(self, model_name: str, model_file: str) -> Optional[Any]:
-        """Load a pickle model file."""
+        """Load a pickle model file, handling gzip compression."""
         try:
             model_path = settings.MODELS_DIR / model_file
             if not model_path.exists():
                 logger.error(f"Model file not found: {model_path}")
                 return None
             
+            # Check for gzip magic number
             with open(model_path, 'rb') as f:
-                model = pickle.load(f)
+                is_gzipped = f.read(2) == b'\x1f\x8b'
+            
+            if is_gzipped:
+                logger.info(f"Loading gzipped model: {model_path}")
+                with gzip.open(model_path, 'rb') as f:
+                    model = pickle.load(f)
+            else:
+                logger.info(f"Loading standard pickle model: {model_path}")
+                with open(model_path, 'rb') as f:
+                    model = pickle.load(f)
+                    
             logger.info(f"Successfully loaded {model_name}: {model_path}")
             return model
         except Exception as e:
