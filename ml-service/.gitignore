@@ -1,0 +1,60 @@
+# -------------------------
+# Python related
+# -------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Logs
+*.log
+logs/
+
+# Environment variables
+.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# -------------------------
+# Python ML / AI models
+# -------------------------
+*.pkl
+*.h5
+*.pt
+*.onnx
+frozen_inference_graph.pb
+ssd_mobilenet_v3_large_coco_2020_01_14.pbtxt
+coco.txt
+
+# -------------------------
+# CSV / data files
+# -------------------------
+data/
+src/*.csv
+
+# -------------------------
+# IDE / Editor files
+# -------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# -------------------------
+# OS files
+# -------------------------
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# Node / Express related
+# -------------------------
+node_modules/
+npm-debug.log
+yarn-error.log
+.env.local
