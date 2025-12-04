@@ -1,0 +1,4 @@
+project_id = "bnquqkqbvgdmqsipjfpm"
+
+[functions.realtime-session]
+verify_jwt = false

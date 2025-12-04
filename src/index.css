@@ -1,0 +1,320 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+@layer base {
+  :root {
+    /* AgriSmart Hub Design System - Earthy Professional */
+    --background: 120 8% 95%;
+    --foreground: 150 25% 15%;
+
+    --card: 120 10% 99%;
+    --card-foreground: 150 25% 15%;
+
+    --popover: 120 10% 99%;
+    --popover-foreground: 150 25% 15%;
+
+    /* Forest Green Primary */
+    --primary: 152 55% 25%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Amber/Gold Secondary */
+    --secondary: 38 85% 48%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Subtle backgrounds */
+    --muted: 120 8% 90%;
+    --muted-foreground: 150 15% 40%;
+
+    /* Teal Accent */
+    --accent: 174 60% 40%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Success - Emerald */
+    --success: 145 60% 38%;
+    --success-foreground: 0 0% 100%;
+
+    /* Warning - Orange */
+    --warning: 30 90% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --border: 120 10% 85%;
+    --input: 120 10% 85%;
+    --ring: 152 55% 25%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --gradient-hero: linear-gradient(135deg, hsl(152, 55%, 25%) 0%, hsl(152, 45%, 18%) 50%, hsl(174, 60%, 30%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(120, 10%, 99%) 0%, hsl(120, 8%, 95%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(38, 85%, 48%) 0%, hsl(45, 90%, 45%) 100%);
+    --gradient-sky: linear-gradient(135deg, hsl(174, 60%, 40%) 0%, hsl(174, 60%, 55%) 100%);
+    
+    --shadow-soft: 0 4px 20px -4px hsl(150, 25%, 15%, 0.08);
+    --shadow-card: 0 8px 32px -8px hsl(150, 25%, 15%, 0.12);
+    --shadow-glow: 0 0 60px hsl(152, 55%, 25%, 0.15);
+
+    /* Dark Sidebar */
+    --sidebar-background: 152 40% 12%;
+    --sidebar-foreground: 120 10% 90%;
+    --sidebar-primary: 152 55% 35%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 152 30% 18%;
+    --sidebar-accent-foreground: 120 10% 95%;
+    --sidebar-border: 152 30% 20%;
+    --sidebar-ring: 152 55% 35%;
+  }
+
+  .dark {
+    --background: 150 30% 8%;
+    --foreground: 45 30% 95%;
+
+    --card: 150 25% 12%;
+    --card-foreground: 45 30% 95%;
+
+    --popover: 150 25% 12%;
+    --popover-foreground: 45 30% 95%;
+
+    --primary: 152 50% 45%;
+    --primary-foreground: 150 30% 8%;
+
+    --secondary: 38 92% 55%;
+    --secondary-foreground: 150 30% 8%;
+
+    --muted: 150 20% 18%;
+    --muted-foreground: 45 15% 65%;
+
+    --accent: 199 89% 55%;
+    --accent-foreground: 150 30% 8%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 158 64% 50%;
+    --success-foreground: 150 30% 8%;
+
+    --warning: 25 95% 60%;
+    --warning-foreground: 150 30% 8%;
+
+    --border: 150 20% 20%;
+    --input: 150 20% 20%;
+    --ring: 152 50% 45%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-xl border border-border/50 shadow-card;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-hero);
+  }
+
+  .btn-hero {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5;
+  }
+
+  .btn-secondary-hero {
+    @apply bg-secondary text-secondary-foreground hover:bg-secondary/90 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-card hover:-translate-y-1;
+  }
+
+  .stat-card {
+    @apply bg-card rounded-xl p-6 border border-border shadow-soft;
+  }
+
+  .risk-low {
+    @apply bg-success/10 text-success border-success/20;
+  }
+
+  .risk-medium {
+    @apply bg-warning/10 text-warning border-warning/20;
+  }
+
+  .risk-high {
+    @apply bg-destructive/10 text-destructive border-destructive/20;
+  }
+}
+
+@layer utilities {
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 4s ease-in-out infinite;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  /* Weather Animations */
+  .rain-drop {
+    width: 2px;
+    height: 20px;
+    background: linear-gradient(to bottom, transparent, hsl(var(--accent)));
+    animation: rain-fall linear infinite;
+  }
+
+  .lightning-flash {
+    animation: lightning 4s ease-out infinite;
+  }
+
+  .sun-glow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, hsl(38, 92%, 70%) 0%, transparent 70%);
+    animation: sun-pulse 3s ease-in-out infinite;
+  }
+
+  .sun-core {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, hsl(45, 100%, 70%) 0%, hsl(38, 92%, 50%) 100%);
+    border-radius: 50%;
+    box-shadow: 0 0 60px hsl(38, 92%, 50%), 0 0 100px hsl(45, 100%, 60%);
+  }
+
+  .sun-particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: hsl(45, 100%, 70%);
+    border-radius: 50%;
+    animation: sun-particles 6s ease-in-out infinite;
+  }
+
+  .cloud {
+    position: absolute;
+    left: -200px;
+    width: 200px;
+    height: 60px;
+    background: 
+      radial-gradient(circle at 30% 50%, hsl(0, 0%, 95%) 40px, transparent 40px),
+      radial-gradient(circle at 50% 30%, hsl(0, 0%, 95%) 50px, transparent 50px),
+      radial-gradient(circle at 70% 50%, hsl(0, 0%, 95%) 40px, transparent 40px);
+    animation: cloud-drift 20s linear infinite;
+  }
+
+  .snowflake {
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    animation: snow-fall linear infinite;
+    box-shadow: 0 0 5px white;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes rain-fall {
+    0% { transform: translateY(-100vh); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateY(100vh); opacity: 0; }
+  }
+
+  @keyframes lightning {
+    0%, 89%, 91%, 93%, 95%, 100% { background: transparent; }
+    90%, 92%, 94% { background: rgba(255, 255, 255, 0.3); }
+  }
+
+  @keyframes sun-pulse {
+    0%, 100% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.1); opacity: 1; }
+  }
+
+  @keyframes sun-particles {
+    0%, 100% { transform: scale(1) translateY(0); opacity: 0.5; }
+    50% { transform: scale(1.5) translateY(-10px); opacity: 1; }
+  }
+
+  @keyframes cloud-drift {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(100vw + 400px)); }
+  }
+
+  @keyframes snow-fall {
+    0% { transform: translateY(-100vh) rotate(0deg); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+  }
+
+  /* Agricultural image overlays */
+  .farm-overlay {
+    @apply relative overflow-hidden;
+  }
+
+  .farm-overlay::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-t from-background/90 via-background/50 to-transparent z-10;
+  }
+
+  .crop-pattern {
+    background-image: 
+      radial-gradient(circle at 25% 25%, hsl(var(--success) / 0.1) 2px, transparent 2px),
+      radial-gradient(circle at 75% 75%, hsl(var(--primary) / 0.1) 2px, transparent 2px);
+    background-size: 30px 30px;
+  }
+
+  .soil-texture {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23654321' fill-opacity='0.08'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+}
